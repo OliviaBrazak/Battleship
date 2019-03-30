@@ -11,11 +11,26 @@
 
 typedef int64_t bitboard;
 
-struct battle_board {
+struct Battle_Board {
     bitboard p1_ships;
     bitboard p2_ships;
     bitboard p1_hits;
     bitboard p2_hits;
 };
 
-typedef struct battle_board board;
+typedef struct Battle_Board Board;
+
+Board* create_board() {
+	Board* board = malloc(sizeof(board));
+	board->p1_ships = 0;
+	board->p2_ships = 0;
+	board->p1_hits = 0;
+	board->p2_hits = 0;
+	return board;
+}
+
+int place_ship(int board_type, short rot, short player, short x, short y) {
+	if (players == 1) {
+
+
+	
