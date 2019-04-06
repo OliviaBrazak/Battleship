@@ -53,4 +53,3 @@ int place_ship_validation(short board_type, short rot,
 int fire_cannon(short target, short x, short y) {
         return 1;
 }
-	
